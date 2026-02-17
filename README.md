@@ -1,86 +1,78 @@
 <img width="2000" height="1297" alt="Screenshot 2026-02-02 133932" src="https://github.com/user-attachments/assets/4b5986d6-7757-40c1-8415-b9a4622430e8" />
-# Rear Wing CAD Modeling – Parametric Surface Engineering
+# Rear Wing CAD Modeling – Surface Engineering for Performance Applications
 
 ## Project Overview
 
-This project focuses on advanced surface modeling and parametric design of a multi-element rear wing assembly.
+This project focuses on advanced surface modeling of a multi-element rear wing assembly intended for high-downforce applications.
 
-The objective was not purely aerodynamic optimization, but the creation of a geometrically robust, manufacturing-aware, and aerodynamically coherent CAD model capable of supporting CFD and structural validation workflows.
+The primary objective was to achieve high-quality surface continuity while managing complex geometric transitions between aerodynamic and structural regions.
+
+The model was built to support downstream CFD and FEA validation workflows.
 
 ---
 
 ## Design Objectives
 
-- Achieve high surface continuity for aerodynamic efficiency
-- Ensure smooth load transfer regions for structural mounting
-- Maintain manufacturability constraints within Formula Student packaging limits
-- Enable rapid iteration through parametric control
+- Ensure smooth aerodynamic surface transitions
+- Maintain curvature continuity across element interfaces
+- Create structurally compatible mounting regions
+- Respect packaging constraints within Formula Student regulations
 
 ---
 
 ## Surface Engineering Approach
 
-### Class-A Surface Strategy
+### Curvature Continuity (G2)
 
-Critical aerodynamic regions (main plane & flap transitions) were modeled with:
+Critical aerodynamic surfaces (main plane and flap transitions) were modeled with:
 
 - G2 (curvature) continuity
-- Controlled curvature flow across element interfaces
-- Smooth leading-edge and trailing-edge transitions
+- Controlled leading-edge and trailing-edge blending
+- Smooth transition regions between adjacent elements
 
 Why this matters:
 
-Surface discontinuities introduce artificial pressure disturbances in CFD and can trigger premature separation.  
-Maintaining curvature continuity ensures clean airflow attachment and realistic simulation results.
+Surface discontinuities introduce artificial pressure disturbances in CFD simulations and can trigger premature boundary layer separation.
+
+Maintaining curvature continuity ensures realistic aerodynamic behavior and stable meshing conditions.
 
 ---
 
-### Parametric Architecture
+## Structural & Manufacturing Considerations
 
-The model was constructed using editable parameters including:
+The geometry integrates:
 
-- Angle of Attack (AoA)
-- Chord length scaling
-- Flap overlap and slot gap distance
-- Mounting interface positioning
+- Swan neck mounting interface transitions
+- Smooth geometric blending between structural and aerodynamic zones
+- Thickness feasibility aligned with composite manufacturing principles
 
-This allows rapid aerodynamic sensitivity studies without rebuilding geometry.
+The model is compatible with:
 
----
-
-## Topological & Structural Integration
-
-Special attention was given to:
-
-- Swan neck mounting interface geometry
-- Smooth geometric transitions between structural mounts and aero surfaces
-- Controlled thickness variation for composite feasibility
-
-The geometry is compatible with:
-
-- Shell-based FEA modeling
-- CFD meshing workflows
-- Composite laminate manufacturing strategies
+- Shell-based FEA workflows
+- CFD meshing requirements
+- Composite tooling constraints
 
 ---
 
 ## Engineering Insight
 
-In motorsport applications, geometry is not only aesthetic — it directly influences:
+In motorsport engineering, geometry defines performance.
+
+Surface quality directly influences:
 
 - Boundary layer stability
 - Pressure gradient smoothness
-- Structural stiffness integration
-- Manufacturability of composite tooling
+- Structural load transfer behavior
+- Manufacturing feasibility of composite components
 
-This model was built as a performance-driven geometric platform rather than a static visual representation.
+This model was developed as a performance-oriented geometric foundation rather than a purely visual representation.
 
 ---
 
 ## Skills Demonstrated
 
-- Advanced surface modeling (G2 continuity)
-- Parametric CAD architecture
+- Advanced surface modeling
+- G2 curvature continuity control
 - Aerodynamic-aware geometry design
 - Structural interface integration
-- Design-for-manufacturing considerations
+- Design-for-manufacturing awareness
